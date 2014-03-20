@@ -8,10 +8,8 @@
       createTicket: function(data) {
         return {
           url: '/api/v2/tickets.json',
-          dataType: 'json',
           type: 'POST',
-          data: JSON.stringify(data),
-          contentType: 'application/json'
+          data: data
         };
       }
     },
